@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(47, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 13);
@@ -47,7 +47,9 @@
             // lblQueue
             // 
             this.lblQueue.AutoSize = true;
+            this.lblQueue.BackColor = System.Drawing.Color.Transparent;
             this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueue.ForeColor = System.Drawing.Color.White;
             this.lblQueue.Location = new System.Drawing.Point(200, 94);
             this.lblQueue.Name = "lblQueue";
             this.lblQueue.Size = new System.Drawing.Size(242, 55);
@@ -58,7 +60,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(258, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 20);
@@ -67,18 +71,21 @@
             // 
             // buttoncashier
             // 
+            this.buttoncashier.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.buttoncashier.ForeColor = System.Drawing.Color.Teal;
             this.buttoncashier.Location = new System.Drawing.Point(50, 74);
             this.buttoncashier.Name = "buttoncashier";
             this.buttoncashier.Size = new System.Drawing.Size(108, 75);
             this.buttoncashier.TabIndex = 4;
             this.buttoncashier.Text = "Cashier";
-            this.buttoncashier.UseVisualStyleBackColor = true;
+            this.buttoncashier.UseVisualStyleBackColor = false;
             this.buttoncashier.Click += new System.EventHandler(this.buttoncashier_Click);
             // 
             // QueuingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(485, 249);
             this.Controls.Add(this.buttoncashier);

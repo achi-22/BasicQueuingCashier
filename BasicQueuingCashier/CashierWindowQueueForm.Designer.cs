@@ -37,26 +37,32 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnRefresh.ForeColor = System.Drawing.Color.Teal;
             this.btnRefresh.Location = new System.Drawing.Point(12, 10);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(96, 49);
             this.btnRefresh.TabIndex = 0;
             this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnNext.ForeColor = System.Drawing.Color.Teal;
             this.btnNext.Location = new System.Drawing.Point(12, 65);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(96, 49);
             this.btnNext.TabIndex = 3;
             this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // listCashierQueue
             // 
+            this.listCashierQueue.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.listCashierQueue.ForeColor = System.Drawing.Color.Teal;
             this.listCashierQueue.HideSelection = false;
             this.listCashierQueue.Location = new System.Drawing.Point(125, 10);
             this.listCashierQueue.Name = "listCashierQueue";
@@ -72,6 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(373, 257);
             this.Controls.Add(this.listCashierQueue);
             this.Controls.Add(this.btnNext);
