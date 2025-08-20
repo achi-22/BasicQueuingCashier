@@ -48,11 +48,12 @@
             // 
             this.lblQueue.AutoSize = true;
             this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueue.Location = new System.Drawing.Point(204, 94);
+            this.lblQueue.Location = new System.Drawing.Point(200, 94);
             this.lblQueue.Name = "lblQueue";
             this.lblQueue.Size = new System.Drawing.Size(242, 55);
             this.lblQueue.TabIndex = 2;
-            this.lblQueue.Text = "P - 10007";
+            this.lblQueue.Text = "P - 10000";
+            this.lblQueue.Click += new System.EventHandler(this.lblQueue_Click);
             // 
             // label3
             // 
@@ -78,6 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(485, 249);
             this.Controls.Add(this.buttoncashier);
             this.Controls.Add(this.label3);
@@ -85,6 +87,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "QueuingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QueuingForm";
             this.ResumeLayout(false);
             this.PerformLayout();

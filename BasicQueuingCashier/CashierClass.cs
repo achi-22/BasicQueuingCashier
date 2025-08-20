@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BasicQueuingCashier
 {
+
     internal class CashierClass
     {
         private int x;

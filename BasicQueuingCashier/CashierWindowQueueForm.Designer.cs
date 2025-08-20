@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.listCashierQueue = new System.Windows.Forms.ListView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnRefresh
@@ -51,6 +53,7 @@
             this.btnNext.TabIndex = 3;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // listCashierQueue
             // 
@@ -60,6 +63,10 @@
             this.listCashierQueue.Size = new System.Drawing.Size(236, 235);
             this.listCashierQueue.TabIndex = 4;
             this.listCashierQueue.UseCompatibleStateImageBehavior = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // CashierWindowQueueForm
             // 
@@ -71,6 +78,7 @@
             this.Controls.Add(this.btnRefresh);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CashierWindowQueueForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CashierWindowQueueForm";
             this.ResumeLayout(false);
 
@@ -81,5 +89,6 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.ListView listCashierQueue;
+        private System.Windows.Forms.Timer timer1;
     }
 }

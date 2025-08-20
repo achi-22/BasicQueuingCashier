@@ -11,12 +11,15 @@ using System.Windows.Forms;
 namespace BasicQueuingCashier
 {
     public partial class QueuingForm : Form
+
     {
         private CashierClass cashier;
+        CashierWindowQueueForm form = new CashierWindowQueueForm();
         public QueuingForm()
         {
             InitializeComponent();
             cashier = new CashierClass();
+            form.Show();
         }
 
         private void btnCashier(object sender, EventArgs e)
@@ -29,6 +32,11 @@ namespace BasicQueuingCashier
             lblQueue.Text = cashier.CashierGeneratedNumber("P - ");
             CashierClass.getNumberInQueue = lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
+        }
+
+        private void lblQueue_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
