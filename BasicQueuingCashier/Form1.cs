@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace BasicQueuingCashier
 {
-    public partial class Form1 : Form
+    public partial class QueuingForm : Form
     {
-        public Form1()
+        private CashierClass cashier;
+        public QueuingForm()
         {
             InitializeComponent();
+            cashier = new CashierClass();
+        }
+
+        private void btnCashier(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttoncashier_Click(object sender, EventArgs e)
+        {
+            lblQueue.Text = cashier.CashierGeneratedNumber("P - ");
+            CashierClass.getNumberInQueue = lblQueue.Text;
+            CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
         }
     }
 }
