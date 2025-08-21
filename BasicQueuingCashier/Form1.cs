@@ -38,5 +38,10 @@ namespace BasicQueuingCashier
         {
 
         }
+
+        private void QueuingForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

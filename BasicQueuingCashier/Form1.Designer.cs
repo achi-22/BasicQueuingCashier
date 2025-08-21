@@ -38,9 +38,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(47, 175);
+            this.label1.Location = new System.Drawing.Point(63, 215);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 13);
+            this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "*Click to get a number";
             // 
@@ -50,9 +51,10 @@
             this.lblQueue.BackColor = System.Drawing.Color.Transparent;
             this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQueue.ForeColor = System.Drawing.Color.White;
-            this.lblQueue.Location = new System.Drawing.Point(200, 94);
+            this.lblQueue.Location = new System.Drawing.Point(267, 116);
+            this.lblQueue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQueue.Name = "lblQueue";
-            this.lblQueue.Size = new System.Drawing.Size(242, 55);
+            this.lblQueue.Size = new System.Drawing.Size(296, 69);
             this.lblQueue.TabIndex = 2;
             this.lblQueue.Text = "P - 10000";
             this.lblQueue.Click += new System.EventHandler(this.lblQueue_Click);
@@ -63,9 +65,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(258, 74);
+            this.label3.Location = new System.Drawing.Point(344, 91);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 20);
+            this.label3.Size = new System.Drawing.Size(166, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Position in Queue";
             // 
@@ -73,9 +76,10 @@
             // 
             this.buttoncashier.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.buttoncashier.ForeColor = System.Drawing.Color.Teal;
-            this.buttoncashier.Location = new System.Drawing.Point(50, 74);
+            this.buttoncashier.Location = new System.Drawing.Point(67, 91);
+            this.buttoncashier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttoncashier.Name = "buttoncashier";
-            this.buttoncashier.Size = new System.Drawing.Size(108, 75);
+            this.buttoncashier.Size = new System.Drawing.Size(144, 92);
             this.buttoncashier.TabIndex = 4;
             this.buttoncashier.Text = "Cashier";
             this.buttoncashier.UseVisualStyleBackColor = false;
@@ -83,19 +87,21 @@
             // 
             // QueuingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(485, 249);
+            this.ClientSize = new System.Drawing.Size(647, 306);
             this.Controls.Add(this.buttoncashier);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "QueuingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QueuingForm";
+            this.Load += new System.EventHandler(this.QueuingForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

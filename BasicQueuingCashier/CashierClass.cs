@@ -9,14 +9,9 @@ namespace BasicQueuingCashier
 
     internal class CashierClass
     {
-        private int x;
+        private static int x = 10000;
         public static string getNumberInQueue = "";
-        public static Queue<string> CashierQueue;
-        public CashierClass()
-        {
-            x = 10000;
-            CashierQueue = new Queue<string>();
-        }
+        public static Queue<string> CashierQueue = new Queue<string>();
         public string CashierGeneratedNumber(string CashierNumber)
         {
             x++;

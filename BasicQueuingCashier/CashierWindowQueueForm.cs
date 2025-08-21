@@ -13,6 +13,8 @@ namespace BasicQueuingCashier
 {
     public partial class CashierWindowQueueForm : Form
     {
+        private CashierClass cashier;
+        CustomerView form2 = new CustomerView();
         public CashierWindowQueueForm()
         {
             InitializeComponent();
@@ -20,6 +22,9 @@ namespace BasicQueuingCashier
             timer.Interval = (1 * 1000);
             timer.Tick += new EventHandler(timer1_Tick); 
             timer.Start();
+
+            cashier = new CashierClass();
+            form2.Show();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -42,6 +47,7 @@ namespace BasicQueuingCashier
             {
                 string ServedCustomer = CashierClass.CashierQueue.Dequeue();
                 DisplayCashierQueue(CashierClass.CashierQueue);
+                form2.UpdateNowServing(ServedCustomer);
             }
             else
             {
@@ -52,6 +58,16 @@ namespace BasicQueuingCashier
         private void timer1_Tick(object sender, EventArgs e)
         {
             DisplayCashierQueue(CashierClass.CashierQueue);
+
+        }
+
+        private void CashierWindowQueueForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listCashierQueue_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
